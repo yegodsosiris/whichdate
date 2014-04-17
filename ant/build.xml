@@ -1,0 +1,15 @@
+<project name="Which Date" default="fix-persistence.xml">
+	
+
+	
+	<target name="fix-persistence.xml" description="fix">
+		<copy file="${basedir}/../src/META-INF/persistence.xml" 
+			tofile="${basedir}/../war/WEB-INF/classes/META-INF/persistence.xml"/>
+
+		<copy file="${basedir}/../war/WEB-INF/properties/config.properties" 
+			tofile="${basedir}/../war/WEB-INF/classes/config.properties"/>
+	</target>
+	
+</project>
+
+
